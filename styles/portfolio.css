@@ -21,8 +21,9 @@ h6{
 h1{
     font-size: 96px;
 }
-p{    
+.heading{    
     font-weight: normal;
+    text-align: center;
     
 }
 .hero{
@@ -54,5 +55,41 @@ p{
     margin-top: 30px; 
         
 }
+.architectural-heading{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 42px;
+    font-weight: bold;
+}
+p{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 30px;
+    
+}
+.btn-branding{
+    color:var(--button-color);
+    font-size: 18px;
+    line-height: 27px;
+    padding: 12px 20px;
+    border: 1px solid var(--button-color);
+    border-radius: 4px;
+}
+.project-description{
+    padding: 120px 60px;
+}
 
-   
+@media(max-width: 900px){
+.project-description{
+    padding: 0;
+    text-align: center;
+}
+h1{
+    font-size: 54px;
+    line-height: 1.5;
+}
+.hero{
+    padding: 80px 20px;
+}
+}
+
+  

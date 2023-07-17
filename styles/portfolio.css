@@ -14,17 +14,21 @@ h3,
 h4,
 h5,
 h6{
-    color: black;
-    font-family: var(--heading-font-family);
+    color: black;    
     font-weight: bold;
 }
 h1{
     font-size: 96px;
 }
+h4{
+   font-family: var(--heading-font-family);
+   font-weight: bold;
+   font-size: 42px;
+}
 .heading{    
     font-weight: normal;
-    text-align: center;
-    
+    text-align: center;    
+   
 }
 .hero{
     background: var(--primary-color);
@@ -51,9 +55,14 @@ h1{
     font-size: 18px;
     line-height: 27px;
     padding: 12px 20px;
-    border: none;
-    margin-top: 30px; 
-        
+    border: blueviolet;
+    margin-top: 30px;        
+}
+.btn-success:hover{
+    color: var(--button-color);
+    border: 1px solid var(--button-color);    
+    border-radius: 4px;
+    background: var(--primary-color);
 }
 .architectural-heading{
     font-family: 'Architects Daughter', cursive;
@@ -74,8 +83,143 @@ p{
     border: 1px solid var(--button-color);
     border-radius: 4px;
 }
-.project-description{
-    padding: 120px 60px;
+.about-section{
+    padding: 40px 60px;
+}
+.content-about{
+    padding: 160px 20px;
+}
+.content-about h1{
+    font-size: 64px;
+    line-height: 80px;
+}
+.content-about h2{
+    font-size: 18px;
+    font-family: var(--default-font-family);
+}
+.img-about{
+    height: 360px;
+    width: 360px;
+    margin-top: 180px;
+}
+.work-section h1{
+    font-size: 64px;
+    text-align: center;
+    font-family: var(--heading-font-family);
+    margin-bottom: 30px;
+}
+.content p{
+    font-size: 14px;    
+    text-align: center;
+    margin: 0;
+    font-family: var(--default-font-family);
+}
+.content h3{
+    font-size: 24px;
+    text-align: center;
+    font-family: var(--default-font-family);
+    line-height: 1.5;
+    margin-top: 20px;
+}
+.img-work-1{
+    height: 345px;
+    width: 525px; 
+          
+}
+.img-work-2{
+    height: 346px;
+    width: 533px; 
+         
+}
+.img-work-3{
+    height: 300px;
+    width: 488px; 
+}
+.img-work-4{
+    height: 250px;
+    width: 500px; 
+}
+.work-sectionh1 h1{
+    font-size: 64px;
+    line-height: 80px;
+}
+.fa-brands,.fa-sharp {
+    font-size: 30px;
+    margin: 0 10px 20px 0;
+}
+.logo{
+    max-width: 140px;
+    max-height: 70px;
+}
+.logo-mini {    
+    max-height: 40px; 
+    margin-top: 22px;   
+}
+nav li{
+    display: inline;
+    padding: 7px;
+    line-height: 42px;      
+}
+nav ul{    
+    margin-top: 20px;
+    padding: 0;    
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover,
+nav li.active a{
+    color: var(--button-color);
+    transition: all 100ms ease-in-out;
+}
+.last-row{
+    margin-bottom: 50px;
+}
+footer .all-links{
+    text-align: center;    
+}
+
+footer .email-link{       
+    color: black;
+    font-size: 18px;
+    text-decoration: none; 
+    text-align: center; 
+    transition: all 200ms ease-in-out; 
+}
+footer .email-link:hover{
+    color: var(--button-color);
+    transition: all 100ms ease-in-out;
+    background: white;
+}
+footer .icons{    
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;      
+}
+.icons a{
+    background: var(--primary-color);    
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 0 20px;  
+    color: var(--button-color);
+    transition: all 200ms ease-in-out;     
+}
+
+footer .icons a:hover{
+    color:white;
+    background: var(--button-color);     
+}
+.contact-box{
+    background: var(--primary-color);
+    border-radius: 20px; 
+    padding: 30px 120px;
+    margin-bottom: 50px;   
+
+}
+footer .github-link:hover{
+    color: blue;
 }
 
 @media(max-width: 900px){
@@ -90,6 +234,15 @@ h1{
 .hero{
     padding: 80px 20px;
 }
+.content-about{
+    padding: 0;
+    text-align: center;
 }
-
-  
+nav ul{
+    text-align: center;
+    margin-left: 10px;
+}
+nav a{
+   font-size: 12px;
+}
+}
